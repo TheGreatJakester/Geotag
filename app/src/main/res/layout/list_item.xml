@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Layout">
+    <TextView
+            android:text="Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/latLable" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Logitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/latLable" app:layout_constraintStart_toStartOf="@+id/latLable"
+    />
+    <TextView
+            android:text="Altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="@+id/textView"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="@string/blankNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/latText"
+            app:layout_constraintTop_toTopOf="@+id/latLable" app:layout_constraintStart_toEndOf="@+id/latLable"
+            android:layout_marginStart="32dp"/>
+    <TextView
+            android:text="@string/blankNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/longText" app:layout_constraintStart_toStartOf="@+id/latText"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/latText"/>
+    <TextView
+            android:text="@string/blankNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/altText" app:layout_constraintStart_toStartOf="@+id/longText"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/longText" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="@string/blankString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buldingText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="@string/blankString"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:id="@+id/floorText"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/buldingText"
+            app:layout_constraintStart_toStartOf="@+id/buldingText"/>
+    <TextView
+            android:text="@string/blankString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/roomText"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/floorText"
+            app:layout_constraintStart_toStartOf="@+id/floorText"/>
+    <TextView
+            android:text="@string/blankString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionText" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+    />
+    <Button
+            android:text="Remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trashTagButton" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.64" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

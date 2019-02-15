@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Geotag</string>
+    <string name="blankNumber">**##**</string>
+    <string name="blankString"><![CDATA[**&&**]]></string>
+</resources>
